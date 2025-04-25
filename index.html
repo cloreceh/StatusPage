@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Mission Travel Status</title>
+  <link rel="stylesheet" href="screen.css">
+</head>
+<body>
+  <h1>Mission Travel Status</h1>
+
+  <div class="info-row">
+    <div class="info-box" id="mission-1" data-marker="marker-1" style="border-color: green;">
+      <strong>Odyssey Sentinel</strong><br>Status:<br>En route to Proxima Centauri b<br><br>Travel Left:<br>3.2 light years
+    </div>
+    <div class="info-box" id="mission-2" data-marker="marker-2" style="border-color: gold;">
+      <strong>Vanguard Horizon</strong><br>Status:<br>Orbiting Titan<br><br>Travel Left:<br>0.0 light-years
+    </div>
+    <div class="info-box" id="mission-3" data-marker="marker-3" style="border-color: green;">
+      <strong>Stellar Nomad</strong><br>Status:<br>Passing through Oort Cloud<br><br>Travel Left:<br>0.8 light-years
+    </div>
+    <div class="info-box" id="mission-4" data-marker="marker-4" style="border-color: green;">
+      <strong>Eclipse Pathfinder</strong><br>Status:<br>Returning from Europa<br><br>Travel Left:<br>0.5 AU
+    </div>
+    <div class="info-box" id="mission-5" data-marker="marker-5" style="border-color: green;">
+      <strong>Aurora Hex</strong><br>Status:<br>Mars surface outpost supply run<br><br>Travel Left:<br>0.3 AU
+    </div>
+    <div class="info-box" id="mission-6" data-marker="marker-6" style="border-color: red;">
+      <strong>Solstice Echo</strong><br>Status:<br>Lost contact<br><br>Travel Left:<br>Unknown
+    </div>
+    <div class="info-box" id="mission-7" data-marker="marker-7" style="border-color: green;">
+      <strong>Nebula Whisper</strong><br>Status:<br>Observing dust clouds<br><br>Travel Left:<br>1.1 light years
+    </div>
+  </div>
+
+  <div class="map">
+    <img src="galaxy.png" class="background" alt="Galaxy Map">
+
+    <img src="green.png" class="marker" id="marker-1" data-info="mission-1" style="top: 20%; left: 10%;">
+    <img src="yellow.png" class="marker" id="marker-2" data-info="mission-2" style="top: 25%; left: 75%;">
+    <img src="green.png" class="marker" id="marker-3" data-info="mission-3" style="top: 30%; left: 35%;">
+    <img src="green.png" class="marker" id="marker-4" data-info="mission-4" style="top: 55%; left: 30%;">
+    <img src="green.png" class="marker" id="marker-5" data-info="mission-5" style="top: 65%; left: 60%;">
+    <img src="red.png" class="marker" id="marker-6" data-info="mission-6" style="top: 75%; left: 90%;">
+    <img src="green.png" class="marker" id="marker-7" data-info="mission-7" style="top: 40%; left: 50%;">
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
